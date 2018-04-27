@@ -32,7 +32,7 @@ html-webpack-root-element-plugin
 Plugin for [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) to output top level root html element.
 
 This is especially usuful for front end frameworks such as [React](https://reactjs.org/) or [Angular](https://angular.io/)
-when you want to mount and render your application to top level element and not directly with `<body/>`.
+when you want to mount and render your application to top level element and not directly into `<body/>`.
 
 Table of Contents
 -----------------
@@ -62,14 +62,14 @@ Usage
 Just import the module into your webpack config and place if __after__ `html-webpack-plugin`:
 
 ```javascript
-const HtmlWebpackExcludeEmptyAssetsPlugin = require("html-webpack-exclude-empty-assets-plugin");
+const HtmlWebpackRootElementPlugin = require("html-webpack-root-element-plugin");
 
 module.exports = {
   // ...
   plugins: [
     // ...
     new HtmlWebpackPlugin(),
-    new HtmlWebpackExcludeEmptyAssetsPlugin(),
+    new HtmlWebpackRootElementPlugin(),
     // ...
   ]
 };
@@ -98,7 +98,7 @@ Possible values:
 Example with `string` value:
 
 ```javascript
-const HtmlWebpackExcludeEmptyAssetsPlugin = require("html-webpack-exclude-empty-assets-plugin");
+const HtmlWebpackRootElementPlugin = require("html-webpack-root-element-plugin");
 
 module.exports = {
   // ...
@@ -107,7 +107,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       rootElement: "my-id"
     }),
-    new HtmlWebpackExcludeEmptyAssetsPlugin(),
+    new HtmlWebpackRootElementPlugin(),
     // ...
   ]
 };
@@ -122,7 +122,7 @@ will output:
 Example with `object` value:
 
 ```javascript
-const HtmlWebpackExcludeEmptyAssetsPlugin = require("html-webpack-exclude-empty-assets-plugin");
+const HtmlWebpackRootElementPlugin = require("html-webpack-root-element-plugin");
 
 module.exports = {
   // ...
@@ -134,7 +134,7 @@ module.exports = {
         idAttribute: "my-id"
       }
     }),
-    new HtmlWebpackExcludeEmptyAssetsPlugin(),
+    new HtmlWebpackRootElementPlugin(),
     // ...
   ]
 };
