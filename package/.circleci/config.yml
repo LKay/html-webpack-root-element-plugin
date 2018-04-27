@@ -1,0 +1,52 @@
+version: 2.0
+
+ jobs:
+     build:
+         docker:
+             - image: node:8
+
+         steps:
+             - checkout
+             - run: echo $CIRCLE_SHA1 > .circle-sha
+             - run: echo "Install Dependencies"
+             - run: npm i
+             - run: echo "Run Tests"
+             - run: npm test
+             - run: echo "Build"
+             - run: npm run build
+             - save_cache:
+                 key: project-{{ checksum ".circle-sha" }}
+                 paths:
+                     - ~/project
+
+     deploy:
+         docker:
+             - image: node:8
+
+         steps:
+             - run: echo $CIRCLE_SHA1 > .circle-sha
+             - restore_cache:
+                 keys:
+                     - project-{{ checksum ".circle-sha" }}
+             - run:
+                 command: |
+                     echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+                     npm run release -- -n --npm.publish
+
+ workflows:
+     version: 2
+
+     build_and_deploy:
+         jobs:
+             - build:
+                 filters:
+                     tags:
+                         only: /.*/
+             - deploy:
+                 requires:
+                     - build
+                 filters:
+                     branches:
+                         ignore: /.*/
+                     tags:
+                         only: /\d+(\.\d+){2}(-(alpha|beta)(\d+)?)?/

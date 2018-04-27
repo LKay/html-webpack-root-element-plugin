@@ -1,0 +1,9 @@
+{
+  "src": {
+    "commitMessage": "Bump to version %s",
+    "tagName": "%s"
+  },
+  "npm" : {
+    "publish": false
+  }
+}
