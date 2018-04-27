@@ -6,6 +6,12 @@
     "type": "git",
     "url": "git@github.com:LKay/html-webpack-root-element-plugin.git"
   },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "html-webpack-plugin"
+  ],
   "main": "index.js",
   "types": "index.d.ts",
   "devDependencies": {
