@@ -3,23 +3,26 @@
 [webpack]: https://webpack.js.org/
 
 [npm-url]: https://www.npmjs.com/package/html-webpack-root-element-plugin
+[ci-url]: https://circleci.com/gh/LKay/html-webpack-root-element-plugin/tree/master
 [github-url]: https://github.com/LKay/html-webpack-root-element-plugin/
 [github-issues-url]: https://github.com/LKay/html-webpack-root-element-plugin/issues
 [github-pr-url]: https://github.com/LKay/html-webpack-root-element-plugin/pulls
 [license-url]: https://github.com/LKay/html-webpack-root-element-plugin/blob/master/LICENSE
 
-[shield-node]: https://img.shields.io/node/v/gopay-node.svg
-[shield-npm]: https://img.shields.io/npm/v/gopay-node.svg
-[shield-downloads]: https://img.shields.io/npm/dm/gopay-node.svg
-[shield-license]: https://img.shields.io/npm/l/gopay-node.svg
-[shield-devDependencies]: https://img.shields.io/david/dev/gyro-n/gopay-node.svg
-[shield-optionalDependencies]: https://img.shields.io/david/optional/gyro-n/gopay-node.svg
-[shield-issues]: https://img.shields.io/github/issues/gyro-n/gopay-node.svg
-[shield-pullRequests]: https://img.shields.io/github/issues-pr/gyro-n/gopay-node.svg
+[shield-node]: https://img.shields.io/node/v/html-webpack-root-element-plugin.svg
+[shield-ci]: https://img.shields.io/circleci/project/github/LKay/html-webpack-root-element-plugin/master.svg
+[shield-npm]: https://img.shields.io/npm/v/html-webpack-root-element-plugin.svg
+[shield-downloads]: https://img.shields.io/npm/dm/html-webpack-root-element-plugin.svg
+[shield-license]: https://img.shields.io/npm/l/html-webpack-root-element-plugin.svg
+[shield-devDependencies]: https://img.shields.io/david/dev/LKay/html-webpack-root-element-plugin.svg
+[shield-optionalDependencies]: https://img.shields.io/david/optional/LKay/html-webpack-root-element-plugin.svg
+[shield-issues]: https://img.shields.io/github/issues/LKay/html-webpack-root-element-plugin.svg
+[shield-pullRequests]: https://img.shields.io/github/issues-pr/LKay/html-webpack-root-element-plugin.svg
 
 html-webpack-root-element-plugin
 ================================
 [![NPM version][shield-npm]][npm-url]
+[![Circle CI][shield-ci]][ci-url]
 ![Dev Dependencies][shield-devDependencies]
 ![Optional Dependencies][shield-optionalDependencies]
 [![GitHub Issues][shield-issues]][github-issues-url]
