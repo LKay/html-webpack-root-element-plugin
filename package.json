@@ -9,7 +9,6 @@
   "main": "index.js",
   "types": "index.d.ts",
   "devDependencies": {
-    "release-it": "^7.4.2",
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^5.1.0",
     "typescript": "^2.8.1"
@@ -17,8 +16,7 @@
   "scripts": {
     "linter": "tslint src/**/*.ts",
     "test": "npm run linter",
-    "build": "tsc",
-    "release": "release-it"
+    "build": "tsc"
   },
   "optionalDependencies": {
     "@types/html-webpack-plugin": "^2.30.3",
