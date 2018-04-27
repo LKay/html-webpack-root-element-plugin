@@ -28,9 +28,9 @@ jobs:
           keys:
             - project-{{ checksum ".circle-sha" }}
       - run:
-        command: |
-          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-          npm publish
+          command: |
+            echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+            npm publish
 
 workflows:
   version: 2
