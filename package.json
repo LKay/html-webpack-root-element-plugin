@@ -18,7 +18,7 @@
     "linter": "tslint src/**/*.ts",
     "test": "npm run linter",
     "build": "tsc",
-    "release": "release-it --dry-run"
+    "release": "release-it"
   },
   "optionalDependencies": {
     "@types/html-webpack-plugin": "^2.30.3",
